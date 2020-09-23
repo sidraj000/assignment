@@ -4,7 +4,15 @@ export default function Settings() {
     const [name, setName] = useState("");
     const [dob, setDob] = useState("");
     const [profession, setProfession] = useState("");
-    const [desigation,setDesignation]= useState("");
+    const [designation,setDesignation]= useState("");
+
+    function clickedSubmit(){
+        console.log("submitted")
+    }
+    function clickedCancel()
+    {
+        console.log("cancelled")
+    }
     return (
         <div className="setting">
            
@@ -43,11 +51,13 @@ export default function Settings() {
       <input className="textBox" value="Designation" disabled={true}/>
         <input className="inputBox"
           name="designation"
+          value={designation}
           onChange={e => setDesignation(e.target.value)}
           required />
       </div>
       
-      <button className="buttonSubmit">Submit</button>
+      <button className="buttonSubmit" onClick={clickedSubmit}>Submit</button>
+      <button className="buttonCancel" onClick={clickedCancel}>Cancel</button>
     
       </div>
     )

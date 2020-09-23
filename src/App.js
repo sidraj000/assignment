@@ -4,8 +4,6 @@ import './Settings'
 import './Components/Root_menu_components'
 import './Notification'
 import Root_menu_components from './Components/Root_menu_components'
-import Settings from './Settings'
-import Notification from './Notification'
 import Routes from './Routes'
 function App() {
   

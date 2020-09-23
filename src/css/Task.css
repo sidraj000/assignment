@@ -1,0 +1,73 @@
+.task{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.header
+{
+    position: relative;
+    background-color: transparent;
+    border: 0px;
+    left: 50%;
+    top:10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    
+}
+.task_element{
+    position: relative;
+    top: 30px;
+    margin-top: 4vh;
+}
+.taskInputBox{
+    position: relative;
+    height:30px;
+    width:15vw;
+    text-align: center;
+    margin-right: 60px;
+    vertical-align: center;
+    margin-left: 30%;
+ }
+ .selectBox{
+     position: relative;
+     height: 30px;  
+    width: 180px;
+    text-align: center;
+    vertical-align: center ;
+ }
+ .inputBox{
+    position: relative;
+    height: 15px;
+    width: 180px;
+    text-align: center;
+    vertical-align: center;
+}
+.largeBox{
+    position: relative;
+    height: 50px;
+    width: 180px;
+    vertical-align: center;
+}
+.buttonSubmit{
+    position: absolute;
+    left: 70%;
+    top: 470px;
+    padding: 10px 10px 10px 10px;
+    background-color: green;
+    text-align: center;
+    border: 0px;
+    font-size: 15px;
+    color: white;
+}
+.buttonCancel{
+    position: absolute;
+    left: 50%;
+    top:470px;
+    padding: 10px 10px 10px 10px;
+    background-color: red;
+    text-align: center;
+    border: 0px;
+    font-size: 15px;
+    color: white;
+}
