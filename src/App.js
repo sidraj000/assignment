@@ -1,24 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React,{useState} from 'react'
+import './App.css'
+import './Settings'
+import './Components/Root_menu_components'
+import './Notification'
+import Root_menu_components from './Components/Root_menu_components'
+import Settings from './Settings'
+import Notification from './Notification'
+import Routes from './Routes'
 function App() {
+  
+  const child1=[
+    {
+      text:"Settings"
+    },
+    {
+      text:"Notifications"
+    }
+  ]
+  const child2=[
+    {
+      text:"Task1"
+    },
+    {
+      text:"Task2"
+    }
+  ]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className="dabba1">
+        <h1>User</h1>
+      </div>
+
+      <div className="dabba2">
+        
+     <Root_menu_components name="Profile"  childs={child1} />
+     <Root_menu_components name="Tasks"  childs={child2} />
+      </div>
+
+      <div className="dabba3">
+        <Routes/>
+      </div>
+
     </div>
   );
 }

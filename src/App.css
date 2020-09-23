@@ -1,38 +1,89 @@
-.App {
+html, body, #root{
+  height: 100%;
+  width: 100%;
+}
+.App{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #f35d71;
+}
+.notification{
+  position: absolute;
+  height: 100%;
+  width: 100%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.notificationItem{
+  position: relative;
+  top: 10vh;
+  margin-top: 2vh;
+  height:4vh;
+  
+}
+.switchBox{
+  height: 4vh;
+}
+.notificationInputBox{
+height:3vh;
+width:15vw;
+text-align: center;
+font-size: 100%;
+margin-right: 5vw;
+vertical-align: top;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dabba1{
+  position: absolute;
+  text-align: center;
+  height:20%;
+  width :100%;
+  background-color: aqua;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dabba2{
+  position: absolute;
+  top:20%;
+  height: 80%;
+  width: 15%;
+  background-color: #F3DC5D;
 }
-
-.App-link {
-  color: #61dafb;
+.dabba3{
+  position: absolute;
+  top:20%;
+  left: 15%;
+  height: 80%;
+  width: 85%;
+  background-color: rgb(30, 148, 89);
 }
+.rootMenu{
+  margin-top: 5px;
+  position: relative;
+  text-align: left;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.rootHead{
+  
+  position: relative;
+  left: 1vw;
+}
+.rootChildList
+{
+  position: relative;
+  left:2vw;
+  top:3px;
+}
+.rootChildButton{
+  border: 0px;
+  width: 8vw;
+  height:1.5vw;
+  text-align: center;
+}
+.rootHeadButton{
+  background-color: bisque;
+  border: 0px;
+  width: 10vw;
+  height:2vw;
+  text-align: center;
+  font-weight: bold;
+  
 }
