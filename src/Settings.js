@@ -6,7 +6,44 @@ export default function Settings() {
     const [profession, setProfession] = useState("");
     const [designation,setDesignation]= useState("");
 
+    function validate()
+    {
+      if(name.length>30 || designation.length>30 || profession.length>30)
+      {
+        return false
+      }
+      if(dob.length==10)
+      {
+        for(var i=0;i<4;i++)
+        {
+          if(dob[i]>'9' || dob[i]<'0') return false;
+        }
+        for(var i=5;i<7;i++)
+        {
+          if(dob[i]>'9' || dob[i]<'0') return false;
+        }
+        for(var i=8;i<10;i++)
+        {
+          if(dob[i]>'9' || dob[i]<'0') return false;
+        }
+        if(dob[4]!='-' || dob[7]!='-')
+        return false;
+      }
+      else
+      {
+        return false;
+      }
+      return true;
+    }
     function clickedSubmit(){
+      var bool=validate();
+      console.log(bool);
+      if(!bool)
+      {
+        console.log("incorrect format");
+        window.alert("incorrect format");
+      }
+      else
         console.log("submitted")
     }
     function clickedCancel()
@@ -37,7 +74,7 @@ export default function Settings() {
       </div>
 
       <div className="settingItem">
-      <input className="textBox" value="Country" disabled={true}/>
+      <input className="textBox" value="Profession" disabled={true}/>
         <input className="inputBox"
           name="profession"
           value={profession}
